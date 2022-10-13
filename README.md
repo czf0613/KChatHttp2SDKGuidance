@@ -1,7 +1,9 @@
 # KChatHttp2SDKGuidance
 
 真正的KChat项目底层实现为http2，这个技术非常新，能给我们带来很多的新特性，但是这个版本的SDK非常挑运行时，基本上除非是原生App，几乎没有能够使用的地方，所谓有利有弊吧。
+
 我们还提供了KChatSDK的Http1.1实现，请往这里：https://github.com/czf0613/KChatWebSocketSDKGuidance
+
 Http1.1版本的实现是完全开源的，也非常欢迎大家一起添砖加瓦，但是Http1.1终究还是有些功能有所牺牲。
 
 ## 建议&警告
