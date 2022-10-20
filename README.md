@@ -39,3 +39,19 @@ Http1.1版本的实现是完全开源的，也非常欢迎大家一起添砖加�
 7，非主流编程语言（……
 
 # 接口文档
+
+请看根目录下的protos文件夹下的proto文件，内有非常详细的接口注释。
+
+SDK使用流程请参考下图：
+
+``` mermaid
+graph TD;
+contact[联系我们获取AppId与AppKey]
+download[下载对应系统的SDK或参照SDKGuidance]
+contact --> register(调用user.proto中定义的createUser方法注册当前用户)
+download --> register
+register --用户不存在则新建--> guid[返回ChatSDKUserGuid]
+register --> guid
+guid --> success(可以成功调用chat.proto里面的服务了)
+```
+
